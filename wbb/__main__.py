@@ -89,8 +89,8 @@ async def help_command(_, message):
                         url=f"t.me/{BOT_USERNAME}?start=help",
                     ),
                     InlineKeyboardButton(
-                        text="Repo 🛠",
-                        url="https://github.com/thehamkercat/WilliamButcherBot",
+                        text="Movie Group 🛠",
+                        url="https://t.me/cinemapedika",
                     )
                 ],
                 [
@@ -99,8 +99,8 @@ async def help_command(_, message):
                         callback_data="stats_callback"
                     ),
                     InlineKeyboardButton(
-                        text="Support 👨",
-                        url="t.me/WBBSupport"
+                        text="Get All Our Channel Links",
+                        url="https://t.me/CP_S4U_Links"
                     )
                 ]
             ]
@@ -116,7 +116,7 @@ async def help_command(_, message):
                 ),
                 InlineKeyboardButton(
                     text="Repo 🛠",
-                    url="https://github.com/thehamkercat/WilliamButcherBot"
+                    url="https://t.me/cinemapedika"
                 )
             ],
             [
@@ -125,19 +125,19 @@ async def help_command(_, message):
                     callback_data="stats_callback"
                 ),
                 InlineKeyboardButton(
-                    text="Support 👨",
-                    url="t.me/WBBSupport"
+                    text="Get All Our Channel Links",
+                    url="https://t.me/CP_S4U_Links"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="Add Me To Your Group 🎉",
+                    text="No Way",
                     url=f"http://t.me/{BOT_USERNAME}?startgroup=new"
                 )
             ]
         ]
     )
-    await message.reply(f"Hey there! My name is {BOT_NAME}. I can manage your group with lots of useful features, feel free to add me to your group.", reply_markup=keyboard)
+    await message.reply(f"Hey there! My name is {BOT_NAME}. ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ @cinemapedika ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ", reply_markup=keyboard)
 
 
 async def help_parser(name, keyboard=None):
@@ -145,9 +145,7 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
         """Hello {first_name}! My name is {bot_name}!
-I'm a group management bot with some usefule features.
-You can choose an option below, by clicking a button.
-Also you can ask anything in Support Group.
+ഞാൻ ഒരു ഗ്രൂപ്പ് മാനേജർ ബോട്ട് ആണ് പക്ഷെ വെറുതെ സമയം കളയണ്ട എന്നെ @cinemapedika ഗ്രൂപ്പിൽ മാത്രമേ ഉപയോഗിക്കാൻ കഴിയൂ
 
 General command are:
  - /start: Start the bot
